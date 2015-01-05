@@ -1,0 +1,80 @@
+JAVA REVIEW & SAMPLE INTERVIEW QUESTIONS
+
+1) Java is Object Oriented, platform independent, robust, interpreted and multithreaded.
+
+2) Its architecture neutral bcoz its compiler generates an architecture-neutral object file format which makes the compiled code executable on many processors with the presence of a Java Runtime system.
+
+3) Java is High Performing – java uses “Just-In-Time” compiler which turns Java byte code (a program that contains instructions) that can be interpreted and sent directly to the processor. 
+
+4) Java is Dynamic – designed to adapt to an evolving environment. Programs can carry extensive amount of run-time info that can be used to verify and resolve accesses to objects on run-time
+
+5) What’s JVM? And what is it in context of Java being platform independent? – Upon compilation, java is compiled into platform independent byte code. This byte code is distributed over the web and interpreted by JVM on whichever platform its being run. 
+
+6) Keyword specific to Java: import, super, finally
+
+7) What’s an Object? – A Runtime entity, and its state is stored in fields and behavior is shown via methods. Methods operate on an object’s internal state and serve as primary mechanism for object to object communication. 
+
+8) What’s a Class? – “blueprint” from which individual objects are created. Classes can contain fields & methods to describe behavior of an object.
+
+9) A class can have: local variables, instance, and class variables.
+
+10) Local variables: defined inside methods, constructors, or blocks. Declared and initialized only within its method, and destroyed once method is completed.
+
+11) Instance variables: defined within a class, but outside any method. These variables are instantiated when class is loaded. 
+
+12) Class variables: declared within a class, outside any method, WITH the static keyword.
+
+13) Singleton class: class that limits the number to one, but allows flexibility to create more objects id situation changes.
+
+14) Constructor: is invoked when a new object is created. Every class has a constructor. If we don’t explicitly write a constructor for a class, java compiler will build a default constructor for that class.
+
+15) 3 steps for creating an object for a class: A- Object declared, B- Object instantiated, C- Object initialized. 
+
+16) Bytes are 4 times smaller than ints; used when need to save space in large arrays, to replace ints. 
+
+17) Static variable: declared as static in class, outside methods, constructors, or blocks.
+
+18) Protected: variables, methods and constructors can be accessed only by the subclasses in other package or any class within the package of the protected member’s class.
+
+19) Operator with highest precedence: Postifx operators. 
+
+20) Switch statements can use ints, bytes, shorts and chars as variables only.
+
+21) parseInt() used to get the primitive data type of a String.
+
+22) String class is immutable, so once it’s created a String object can’t be changed. Since its immutable it can be shared b/w many threads, very helpful for multithreaded programming. 
+
+23) finalize() used to ensure that an object terminates cleanly (destroyed by garbage collector)
+
+24) Exception: problem that arises during execution of a program, caught by handlers positioned along the thread’s method invocation stack. 
+
+25) Checked exceptions: typically a user error or problem not forseen by programmer. Ex: when a file is meant to be found but its not found, exception occurs. They cant be ignored at runtime.
+
+26) Runtime exceptions: ones that can be avoided (caught) by program. These are ignored at times of compilation.
+
+27) 2 Subclasses Under Exception Class: IOException & RuntimeException 
+
+28) ‘throws’ keyword: if a method doesn’t handle a checked exception, the method must declare it using throw. Throws appears at end of a method signature.
+
+29) ‘throw’ keyword: An exception can be thrown, either a newly instantiated one or on that you just caught, using throw keyword. 
+
+30) ‘finally’ keyword: creates a block of code that follows a try block. ALWAYS executes, whether or not an exception has occurred.
+
+31) When creating your own exceptions: 1) ALL exceptions must be a child of Throwable. 2) If you want to write a checked exception that’s automatically enforced by the Handle or Declare Rule, you need to extend the Exception class.
+3) If you’re writing a RuntimeException, extend it to RuntimeException class.
+
+32) Inheritance: Process where one object acquires properties of another. (Its an IS-A) relationship. (A truck IS A vehicle).
+
+33) ‘super’ keyword: if a method overrides one of its superclass’s methods, overridden method can be invoked through the use of the keyword ‘super’ It can also be used to refer to a hidden field.
+
+34) Polymorphism: ability of an object to take many forms. Most commonly happens when a parent class reference is used to refer to a child class object.
+
+35) Abstraction: to make a class in a way to reduce the complexity and also improves maintainability of system.
+
+36) Abstract classes: CANT be instantiated and are either partially implemented or not at all. This class contains 1+ abstract methods which are simply method declarations without a body.
+
+37) When abstract methods used: If you want a class to contain a particular method, but you want the actual implementation of that method to be determined by the child classes, you can declare the method in the parent class abstract. 
+
+38) Encapsulation: making the fields in a class private and providing access to the fields via PUBLIC methods. If a field is declared PRIVATE, it cant be accessed by anyone outside of the class, thereby hiding the fields within the class. Thus, Encapsulation aka Data Hiding.
+
+39) Primary benefit of encapsulation: Ability to modify our implemented code w/o breaking the code of others who use our code. Thus, we have, maintainability, flexibility, and extensibility with our code.  
